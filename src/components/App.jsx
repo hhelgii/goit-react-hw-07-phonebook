@@ -4,7 +4,6 @@ import { nanoid } from 'nanoid';
 import { AddContact } from './addContactForm/AddContact';
 import { ContactList } from './addContactList/ContactList';
 import { FilterContact } from './filterContacts/FilterContact';
-import { setContacts } from 'redux/contactsReducer';
 import { fetchContactsThunk,addContactThunk } from 'redux/contactsOperations';
 import css from './app.module.css';
 const STORAGE_KEY = 'contacts';

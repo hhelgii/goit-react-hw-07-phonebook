@@ -6,8 +6,8 @@ import { selectFilteredContacts } from 'redux/selectors';
 
 export const ContactList = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts.contacts.items);
-  const filter = useSelector(state => state.contacts.filter);
+  // const contacts = useSelector(state => state.contacts.contacts.items);
+  // const filter = useSelector(state => state.contacts.filter);
   
   const onDelete = id => {
     dispatch(deleteContactThunk(id));

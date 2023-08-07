@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
 import css from './addCotact.module.css';
 import { addContactThunk } from 'redux/contactsOperations';
 export const AddContact = () => {
   const dispatch = useDispatch();
-const contacts=useSelector(state=>state.contacts.contacts.items)
+// const contacts=useSelector(state=>state.contacts.contacts.items)
   const onSubmit = event => {
     event.preventDefault();
     const name = event.target.name.value.trim();
